@@ -1,7 +1,7 @@
- let obj = {name: "Rahul" , age:"45" , value:"Top" ,gender:"M"};
- console.log(obj);
- obj["fullname"] = function () {return this.name + " " + this.value};
- console.log(obj.fullname());
+//  let obj = {name: "Rahul" , age:"45" , value:"Top" ,gender:"M"};
+//  console.log(obj);
+//  obj["fullname"] = function () {return this.name + " " + this.value};
+//  console.log(obj.fullname());
 
 //  const person = new Object();
 //  person.firstname = "Rahul";
@@ -145,3 +145,28 @@
 //     lastName: "Doe"
 //   }
 //   console.log(person.fullName.apply(person1, ["Oslo", "Norway"]))
+
+// *********************Function BIND**************************
+
+// const person = {
+//     firstname:"Jaideep",
+//     lastname:"Sharma",
+//     fullname:function(){
+//         return this.firstname + " " + this.lastname;
+//     }
+// }
+
+// const member = {
+//     firstname:"Raju",
+//     lastname:"Baba"
+// }
+
+// let fullname = person.fullname.bind(member);
+// console.log(fullname());
+
+// const numbers = [65, 44, 12, 4];
+// const newArr = numbers.map(myFunction)
+
+// function myFunction(num) {
+//   return num * 10;
+// }
