@@ -39,3 +39,14 @@
 //          function(value){console.log("Success")},
 //          function(error){console.log("NOTSuccess")}
 //   );
+
+
+// async function myfunction(){
+//     const myPromise = new Promise(function(accepted,rejected){
+//         accepted("This will accept now !");
+//     });
+
+//     console.log(await myPromise);
+// }
+
+// myfunction();
