@@ -50,3 +50,10 @@
 // }
 
 // myfunction();
+
+
+// async function getUserDetail() {
+//      const user = await fetch("https://type.fit/api/quotes");
+//      const userData = await user.json();
+//      console.log(userData);}
+//      getUserDetail();
