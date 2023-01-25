@@ -1,4 +1,4 @@
-const vehicleOne = {
+// const vehicleOne = {
 //     brand: 'Ford',
 //     model: 'Mustang',
 //     type: 'car',
