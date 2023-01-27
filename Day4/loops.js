@@ -146,4 +146,14 @@
 //     return arr.indexOf(v)===i;
 // }
 // let arr1 = arr.filter(genuinenumber);
-// console.log(arr1)
+// console.log(arr1);
+
+
+
+// let arr = [12,16,12,14,16,18,20];
+// const getnum = (v) =>{
+//     return (v + (v+1));
+// }
+// let arr1 = arr.filter(getnum);
+// console.log(arr1);
+
