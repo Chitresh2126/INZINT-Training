@@ -57,3 +57,36 @@
 //      const userData = await user.json();
 //      console.log(userData);}
 //      getUserDetail();
+
+
+
+function prom(complete){
+return new Promise(function(resolve,reject){
+    console.log("Fatching data ,please wait!");
+    setTimeout(() =>{
+        if(complete){
+        resolve("WE are success");
+    }
+    else{
+        reject("Sorry");
+    }
+    },3000)    
+});
+}
+
+// let onfullfilment = (result) =>{
+//     console.log(result);
+// }
+// let onrejection = (error) =>{
+//     console.log(error);
+// }
+
+// prom(false).then(onfullfilment);
+// // prom(false).catch(onrejection);
+// prom(false).then(onfullfilment).catch(onrejection);
+
+prom(true).then((result) =>  {
+    console.log(result);
+}).catch((error) => {
+    console.log(error);
+});

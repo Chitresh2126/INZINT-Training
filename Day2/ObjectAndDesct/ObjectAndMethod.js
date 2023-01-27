@@ -170,3 +170,68 @@
 // function myFunction(num) {
 //   return num * 10;
 // }
+
+
+// const product = {
+//     itemName: 'Flower',
+//     price: 50,
+//     discount: 20,
+//     itemcode: 'F40'
+// }
+
+// function createProduct(name,price,discount,itemcode){
+//     return{
+//         itemName:name,
+//         price:price,
+//         discount: discount,
+//         itemcode: itemcode
+//     }
+// }
+// const football = createProduct('football',400,10, 'F30');
+// function Product(name, price , discount , itemcode){
+//     this.itemName = name;
+//     this.price = price;
+//     this.discount = discount;
+//     this.itemcode = itemcode;
+//     this.discountValue = function(){
+//         return price*discount/100;
+//     }
+// }
+
+// const mobile = new Product('Oneplus',30000,5,'OP20');
+
+
+let name = {
+    firstname: "Chitresh",
+    lastname: "Kumar",
+    // printfullname : function(){
+    //     console.log(this.firstname+ " " + this.lastname);
+    // }
+}
+let printfullname = function (hometown) {
+    console.log(this.firstname+ " " + this.lastname + "  " +hometown);
+}
+printfullname.call(name,"Uttarpradesh");
+
+let name2 ={
+    firstname:"Sachin",
+    lastname:"Tendulkar"
+}
+
+
+ // function borrowing
+// name.printfullname.call(name2);
+// printfullname.call(name2,"Uttarpradesh");
+// apply method
+// printfullname.apply(name2,["Uttarpradesh"]);
+// printfullname.apply(name,["Uttarpradesh"]);
+
+
+//  Bind method
+
+let myname = printfullname.bind(name,"Uttarpradesh");
+let myname1 = printfullname.bind(name2,"Uttarpradesh");
+console.log(myname);
+console.log(myname1);
+myname();
+myname1();
