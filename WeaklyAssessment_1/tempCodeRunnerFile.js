@@ -1,0 +1,2 @@
+
+prom(false).catch(onrejection);

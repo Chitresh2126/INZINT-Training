@@ -60,7 +60,7 @@
 
 
 
-function prom(complete){
+function reqq(complete){
 return new Promise(function(resolve,reject){
     console.log("Fatching data ,please wait!");
     setTimeout(() =>{
@@ -85,7 +85,7 @@ return new Promise(function(resolve,reject){
 // // prom(false).catch(onrejection);
 // prom(false).then(onfullfilment).catch(onrejection);
 
-prom(true).then((result) =>  {
+reqq(true).then((result) =>  {
     console.log(result);
 }).catch((error) => {
     console.log(error);
